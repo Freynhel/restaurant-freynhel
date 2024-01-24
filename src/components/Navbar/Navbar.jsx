@@ -6,7 +6,7 @@ import images from '../../constants/images';
 import './Navbar.css';
 
 const Navbar = () => {
-	const [toggleMenu, setToggleMenu ] = useState(false);
+	const [ toggleMenu, setToggleMenu ] = useState(false);
 	
 	return (
 		<nav className='app__navbar'>
@@ -36,11 +36,11 @@ const Navbar = () => {
 						<MdOutlineRestaurant fontSize={27} className='overlay__close' onClick={() => setToggleMenu(false)}/>
 					
 						<ul className='app__navbar-smallscreen-links'>
-							<li className='p__opensans'><a href="#home"> Home </a></li>
-							<li className='p__opensans'><a href="#about"> About </a></li>
-							<li className='p__opensans'><a href="#menu"> Menu </a></li>
-							<li className='p__opensans'><a href="#awards"> Awards </a></li>
-							<li className='p__opensans'><a href="#contact"> Contact </a></li>
+							<li className='p__opensans'><a onClick={() => setToggleMenu(false)} href="#home"> Home </a></li>
+							<li className='p__opensans'><a onClick={() => setToggleMenu(false)} href="#about"> About </a></li>
+							<li className='p__opensans'><a onClick={() => setToggleMenu(false)} href="#menu"> Menu </a></li>
+							<li className='p__opensans'><a onClick={() => setToggleMenu(false)} href="#awards"> Awards </a></li>
+							<li className='p__opensans'><a onClick={() => setToggleMenu(false)} href="#contact"> Contact </a></li>
 						</ul>
 					</div>
 				)}
